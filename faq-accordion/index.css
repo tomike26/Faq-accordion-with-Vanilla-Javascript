@@ -61,7 +61,17 @@ p {
   color: #8866ca;
 }
 
-
+.faq-wrapper .minus-icon {
+    display: none;
+  }
+  
+  .accordion-expand .faq-wrapper .plus-icon {
+    display: none;
+  }
+  
+  .accordion-expand .faq-wrapper .minus-icon {
+    display: inline-block;
+  }
 @media screen and (max-width:960px) {
 
 .faq-section {
