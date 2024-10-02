@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.faq-header {
+  display: flex;
+  gap: 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+  }
+}
+
+.faq-accordions {
+  background: linear-gradient(180deg, rgba(75, 0, 130, 0.8) 50%, #d0c2eb 50%),
+    url("./assets/images/background-pattern-desktop.svg");
+  background-size: contain;
+  background-position: center top;
+  display: flex;
+}
+
+.faq-section {
+  background-color: #fff;
+  width: 40%;
+  margin: 8rem auto 1rem auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.faq-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1ebe4;
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.accordion-expand .faq-answer {
+  max-height: 300px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+}
+
+.faq-wrapper.active p {
+  color: #8866ca;
+}
+
+
+@media screen and (max-width:960px) {
+
+.faq-section {
+  background-color: #fff;
+  width: 80%;
+  margin: 8rem auto 1rem auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 10px;
+}
+}
